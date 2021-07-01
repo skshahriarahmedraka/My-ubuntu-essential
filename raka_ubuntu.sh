@@ -71,6 +71,7 @@ sudo apt install -y transmission
 #sudo apt install -y tasksel 
 
 
+
 sudo snap install atom --classic
 
 sudo snap install wps-2019-snap
