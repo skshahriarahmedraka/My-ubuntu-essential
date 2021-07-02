@@ -8,6 +8,7 @@ sudo apt -y upgrade
 gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'cycle-windows'
+gsettings set org.gnome.shell.extensions.dash-to-dock middle-click-action 'minimize-or-previews'
 # gsettings set org.gnome.settings-daemon.plugins.power percentage-critical 15
 # gsettings set org.gnome.settings-daemon.plugins.power percentage-low  15
 # gsettings set org.gnome.settings-daemon.plugins.power critical-battery-action  'shutdown'
@@ -31,7 +32,7 @@ sudo apt install -y ubuntu-gnome-*
 sudo apt install -y gnome-tweak-tool 
 sudo apt install -y git
 sudo apt install -y calibre
-
+sudo apt install -y mpv
 
 sudo apt install -y vlc gimp gparted synaptic
 sudo apt install -y ubuntu-restricted-extras
