@@ -30,6 +30,12 @@ sudo apt  install -y curl
 sudo apt install -y gnome-shell
 sudo apt install -y ubuntu-gnome-*
 sudo apt install -y gnome-tweak-tool 
+sudo apt install gnome-shell-extensions
+
+# https://www.gnome-look.org/p/1241688/
+# sudo snap install mojave-themes
+
+
 sudo apt install -y git
 sudo apt install -y calibre
 sudo apt install -y mpv
@@ -41,11 +47,11 @@ sudo apt install -y lightdm-settings
 # sudo apt install slick-greeter
 
 
-# sudo apt install arctica-greeter
+#* sudo apt install arctica-greeter
 
-# sudo apt install kylin-greeter
+#* sudo apt install kylin-greeter
 
-# sudo apt install slick-greeter
+#* sudo apt install slick-greeter
 
 # sudo apt install unity-greeter
 
