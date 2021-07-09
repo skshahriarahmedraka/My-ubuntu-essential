@@ -42,8 +42,8 @@ sudo apt install -y mpv
 
 sudo apt install -y vlc gimp gparted synaptic
 sudo apt install -y ubuntu-restricted-extras
-sudo apt install -y lightdm
-sudo apt install -y lightdm-settings
+# sudo apt install -y lightdm
+# sudo apt install -y lightdm-settings
 # sudo apt install slick-greeter
 
 
@@ -61,6 +61,7 @@ sudo apt install -y lightdm-settings
 sudo apt install -y tlp tlp-rdw
 sudo apt install -y preload
 
+# THEME
 echo -ne '\n' | sudo add-apt-repository ppa:numix/ppa
 sudo apt update
 sudo apt install -y numix-gtk-theme numix-icon-theme-circle
@@ -73,7 +74,9 @@ sudo apt install -y telegram-desktop
 sudo apt install -y gnome-tweaks ; sudo apt install -y alacarte ; sudo apt install -y dconf-editor
 sudo snap install --classic code
 sudo apt install -y jupyter
-sudo apt install -y transmission 
+sudo apt install -y deluge
+
+# sudo apt install -y transmission 
 
 #sudo apt install -y tasksel 
 
@@ -91,5 +94,19 @@ sudo apt install -y qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils 
 
 
 sudo apt install -y openvpn dialog python3-pip python3-setuptools  ;  sudo pip3 install protonvpn-cli #; sudo protonvpn init
+
+
+# TO INSTALL deepin os UI
+#sudo add-apt-repository ppa:ubuntudde-dev/stable
+#sudo apt-get update
+# sudo apt install ubuntudde-dde ubuntudde-dde-extras
+
+
+# TO CHANGE gdm3 LOGIN WALLPAPER
+# sudo apt install -y git  make gcc libglib2.0-dev-bin libgtk-3-dev  libpolkit-gobject-1-dev ; git clone https://github.com/thiggy01/gdm-background ; cd gdm-background ; make ; sudo make install
+
+
+
+
 
 
