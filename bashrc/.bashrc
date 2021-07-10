@@ -133,7 +133,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-trap 'echo -ne "\033]0;$BASH_COMMAND - Parrot Terminal\007" > /dev/stderr' DEBUG
+#trap 'echo -ne "\033]0;$BASH_COMMAND - Parrot Terminal\007" > /dev/stderr' DEBUG
 
 
 export PATH=$PATH:/usr/local/go/bin

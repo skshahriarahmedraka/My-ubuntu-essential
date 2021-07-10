@@ -73,7 +73,7 @@ sudo apt install -y telegram-desktop
 
 sudo apt install -y gnome-tweaks ; sudo apt install -y alacarte ; sudo apt install -y dconf-editor
 sudo snap install --classic code
-sudo apt install -y jupyter
+
 sudo apt install -y deluge
 
 # sudo apt install -y transmission 
