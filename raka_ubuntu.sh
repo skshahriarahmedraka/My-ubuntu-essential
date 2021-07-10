@@ -40,7 +40,7 @@ sudo apt install -y git
 sudo apt install -y calibre
 sudo apt install -y mpv
 
-sudo apt install -y vlc gimp gparted synaptic
+sudo apt install -y vlc gimp gparted synaptic bleachbit
 sudo apt install -y ubuntu-restricted-extras
 # sudo apt install -y lightdm
 # sudo apt install -y lightdm-settings
