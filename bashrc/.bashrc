@@ -136,7 +136,7 @@ fi
 #trap 'echo -ne "\033]0;$BASH_COMMAND - Parrot Terminal\007" > /dev/stderr' DEBUG
 
 
-export PATH=$PATH:/usr/local/go/bin
+#export PATH=$PATH:/usr/local/go/bin
 
 
  
