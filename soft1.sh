@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# docker
+############ docker
 sudo apt-get remove docker docker-engine docker.io containerd runc
 sudo apt-get update
 sudo apt-get -y install \
@@ -25,14 +25,14 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 #sudo snap install datagrip --classic 
 
 
-# postgress
+########### postgress
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 sudo apt-get update
 sudo apt-get -y install postgresql
 
 
-# mongodb
+############# mongodb
 wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
 sudo apt-get install -y gnupg
 wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
@@ -44,10 +44,11 @@ sudo apt-get update
 sudo apt-get install -y mongodb-org
 
 
-#redis
+############# redis
 # wget https://download.redis.io/releases/redis-6.2.4.tar.gz ; tar xzf redis-6.2.4.tar.gz ; cd redis-6.2.4 ; make
 
 
+####### vue
 sudo apt install -y npm
 
 sudo npm install vue@next
@@ -74,5 +75,28 @@ sudo npm install -g typescript
 # sudo install data/screenkey.desktop /usr/local/share/applications
 
 #########################################################
+
+
+######## mysql
+sudo apt install mysql-server mysql-client
+
+
+# sudo apt-get install pandoc texlive
+
+############# Update golang 
+
+git clone https://github.com/udhos/update-golang
+
+cd update-golang
+
+wget -qO hash.txt https://raw.githubusercontent.com/udhos/update-golang/master/update-golang.sh.sha256
+
+sha256sum -c hash.txt
+
+sudo ./update-golang.sh
+
+go version
+
+
 
 
