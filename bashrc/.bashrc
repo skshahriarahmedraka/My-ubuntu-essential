@@ -133,10 +133,20 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#trap 'echo -ne "\033]0;$BASH_COMMAND - Parrot Terminal\007" > /dev/stderr' DEBUG
 
 
-#export PATH=$PATH:/usr/local/go/bin
 
+
+
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/.cargo/bin
+export PATH="$PATH:$(go env GOPATH)/bin"
+export PATH=$PATH:/home/ahmed/.linuxbrew/bin
+
+
+
+
+ 
+. "$HOME/.cargo/env"
 
  

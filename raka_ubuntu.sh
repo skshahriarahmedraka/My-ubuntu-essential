@@ -3,6 +3,8 @@
 
 sudo apt update
 sudo apt -y upgrade
+sudo apt full-upgrade 
+
 
 
 gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
@@ -14,16 +16,19 @@ gsettings set org.gnome.shell.extensions.dash-to-dock middle-click-action 'minim
 # gsettings set org.gnome.settings-daemon.plugins.power critical-battery-action  'shutdown'
 # gsettings set org.gnome.settings-daemon.plugins.power percentage-action 15
 
+################ GPU driver
 # echo -ne '\n' | sudo add-apt-repository ppa:graphics-drivers/ppa
 # ubuntu-drivers devices
 # sudo ubuntu-drivers autoinstall
 
-# sudo ufw enable  # firewall
+############## firewall################
+# sudo ufw enable
+# sudo ufw allow 22/tcp
+# sudo ufw allow http
+# sudo ufw allow https
 sudo apt install -y gufw 
 
-sudo ufw allow 22/tcp
-sudo ufw allow http
-sudo ufw allow https
+
 # keep dns 8.8.8.8 , 8.8.4.4
 
 sudo apt  install -y curl
@@ -31,47 +36,30 @@ sudo apt install -y gnome-shell
 sudo apt install -y ubuntu-gnome-*
 sudo apt install -y gnome-tweak-tool 
 sudo apt install gnome-shell-extensions
+sudo apt install -y gnome-tweaks ; sudo apt install -y alacarte ; sudo apt install -y dconf-editor
 
 # https://www.gnome-look.org/p/1241688/
 # sudo snap install mojave-themes
 
-
+sudo apt install -y timeshift
 sudo apt install -y git
 sudo apt install -y calibre
 sudo apt install -y mpv
-
 sudo apt install -y vlc gimp gparted synaptic bleachbit
 sudo apt install -y ubuntu-restricted-extras
+
+# TO CHANGE gdm3 LOGIN WALLPAPER
+# sudo apt install -y git  make gcc libglib2.0-dev-bin libgtk-3-dev  libpolkit-gobject-1-dev ; git clone https://github.com/thiggy01/gdm-background ; cd gdm-background ; make ; sudo make install
+
+
 # sudo apt install -y lightdm
 # sudo apt install -y lightdm-settings
-# sudo apt install slick-greeter
-
-
-#* sudo apt install arctica-greeter
-
-#* sudo apt install kylin-greeter
-
-#* sudo apt install slick-greeter
-
-# sudo apt install unity-greeter
-
-
-
 
 sudo apt install -y tlp tlp-rdw
 sudo apt install -y preload
-
-# THEME
-echo -ne '\n' | sudo add-apt-repository ppa:numix/ppa
-sudo apt update
-sudo apt install -y numix-gtk-theme numix-icon-theme-circle
-sudo apt install -y timeshift
-
-
 sudo apt install -y telegram-desktop 
 
 
-sudo apt install -y gnome-tweaks ; sudo apt install -y alacarte ; sudo apt install -y dconf-editor
 sudo snap install --classic code
 
 sudo apt install -y deluge
@@ -81,10 +69,10 @@ sudo apt install -y deluge
 #sudo apt install -y tasksel 
 
 
-
 sudo snap install atom --classic
 
-sudo snap install wps-2019-snap
+# https://www.libreoffice.org/download/download/
+# sudo snap install wps-2019-snap
 
 sudo apt install -y  obs-studio 
 
@@ -96,14 +84,53 @@ sudo apt install -y qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils 
 sudo apt install -y openvpn dialog python3-pip python3-setuptools  ;  sudo pip3 install protonvpn-cli #; sudo protonvpn init
 
 
-# TO INSTALL deepin os UI
-#sudo add-apt-repository ppa:ubuntudde-dev/stable
-#sudo apt-get update
-# sudo apt install ubuntudde-dde ubuntudde-dde-extras
 
 
-# TO CHANGE gdm3 LOGIN WALLPAPER
-# sudo apt install -y git  make gcc libglib2.0-dev-bin libgtk-3-dev  libpolkit-gobject-1-dev ; git clone https://github.com/thiggy01/gdm-background ; cd gdm-background ; make ; sudo make install
+##################### microsoft fonts########################
+sudo apt install -y ttf-mscorefonts-installer #carlito is calibri & caladea is cambria 
+sudo fc-cache -f -v
+
+######################## homebrew install ##########################
+ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
+test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+test -r ~/.profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
+echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
+brew install gcc
+
+
+############   important path should be copy paste in .bashrc if needed ####################
+# export PATH=$PATH:/usr/local/go/bin
+# export PATH=$PATH:$HOME/.cargo/bin
+# export PATH="$PATH:$(go env GOPATH)/bin"
+# export PATH=$PATH:/home/ahmed/.linuxbrew/bin
+# . "$HOME/.cargo/env"
+
+
+
+##############  extensions ################
+# sudo apt install gnome-shell-extension-
+
+# https://extensions.gnome.org/extension/19/user-themes/
+# https://extensions.gnome.org/extension/2935/control-blur-effect-on-lock-screen/
+# https://extensions.gnome.org/extension/1319/gsconnect/
+# https://extensions.gnome.org/extension/1162/emoji-selector/
+# https://extensions.gnome.org/extension/21/workspace-indicator/
+# https://extensions.gnome.org/extension/1085/simple-net-speed/
+
+######### themes ###############
+# https://www.gnome-look.org/p/1241688
+# https://www.gnome-look.org/p/1346778
+# https://www.gnome-look.org/p/1166289
+
+# THEME
+# echo -ne '\n' | sudo add-apt-repository ppa:numix/ppa
+# sudo apt update
+# sudo apt install -y numix-gtk-theme numix-icon-theme-circle
+
+
+
 
 
 
