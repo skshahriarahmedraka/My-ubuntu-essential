@@ -37,6 +37,8 @@ sudo apt install -y ubuntu-gnome-*
 sudo apt install -y gnome-tweak-tool 
 sudo apt install gnome-shell-extensions
 sudo apt install -y gnome-tweaks ; sudo apt install -y alacarte ; sudo apt install -y dconf-editor
+sudo apt install avro-bin 
+
 
 # https://www.gnome-look.org/p/1241688/
 # sudo snap install mojave-themes
@@ -97,6 +99,7 @@ test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
 test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 test -r ~/.profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
 echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
+echo 'export PATH=$PATH:/home/$USER/.linuxbrew/bin' >> ~/.bashrc 
 brew install gcc
 
 
@@ -130,6 +133,48 @@ brew install gcc
 # sudo apt install -y numix-gtk-theme numix-icon-theme-circle
 
 
+
+################ firefox developer Edition ############################
+ cd ~
+ curl -L -o ~/firefox.tar.bz2  "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=en-US"
+ tar xjf firefox.tar.bz2
+ sudo mv  firefox /opt/firefox-developer-edition
+ sudo chmod 777 -R /opt/firefox-developer-edition
+ 
+ 
+
+
+touch  /usr/share/applications/firefox-developer-edition.desktop
+echo '
+[Desktop Entry]
+Version=1.0
+Name=firefox-developer-edition
+
+GenericName=Web Browser
+
+Keywords=Internet;WWW;Browser;Web;Explorer 
+
+Exec=/opt/firefox-developer-edition/firefox %u
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/opt/firefox-developer-edition/browser/chrome/icons/default/default128.png
+Categories=GNOME;GTK;Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/rss+xml;applica>
+StartupNotify=true
+Actions=new-window;new-private-window;
+
+[Desktop Action new-window]
+Name=Open a New Window
+Exec=/opt/firefox-developer-edition/firefox -new-window
+
+[Desktop Action new-private-window]
+Name=Open a New Private Window
+Exec=/opt/firefox-developer-edition/firefox -private-window
+' >>  /usr/share/applications/firefox-developer-edition.desktop
+
+
+ 
 
 
 
