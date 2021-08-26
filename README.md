@@ -7,6 +7,6 @@ sudo -s
 `
 
 `
-./raka_ubuntu.sh ; ./soft1.sh ; ./deepLearning.sh 
+./ubuntu_essentials.sh ; ./soft1.sh ; ./deepLearning.sh 
 `
 

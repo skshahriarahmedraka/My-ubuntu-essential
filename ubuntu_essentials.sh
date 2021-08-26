@@ -3,7 +3,7 @@
 
 sudo apt update
 sudo apt -y upgrade
-sudo apt full-upgrade 
+sudo apt -y full-upgrade 
 
 
 
@@ -160,7 +160,7 @@ X-MultipleArgs=false
 Type=Application
 Icon=/opt/firefox-developer-edition/browser/chrome/icons/default/default128.png
 Categories=GNOME;GTK;Network;WebBrowser;
-MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/rss+xml;applica>
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;x-scheme-handler/chrome;video/webm;application/x-xpinstall;
 StartupNotify=true
 Actions=new-window;new-private-window;
 

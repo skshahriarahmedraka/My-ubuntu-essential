@@ -1,6 +1,44 @@
 #! /bin/bash
 
-############ docker
+
+################ firefox-nightly ############################
+#  cd ~
+#  curl -L -o ~/firefox.tar.bz2  "https://download.mozilla.org/?product=firefox-nightly-latest-ssl&os=linux64&lang=en-US"
+#  tar xjf firefox.tar.bz2
+#  sudo mv  firefox /opt/firefox-nightly
+#  sudo chmod 777 -R /opt/firefox-nightly
+# touch  /usr/share/applications/firefox-nightly.desktop
+# echo '
+# [Desktop Entry]
+# Version=1.0
+# Name=firefox-nightly
+
+# GenericName=Web Browser
+
+# Keywords=Internet;WWW;Browser;Web;Explorer 
+
+# Exec=/opt/firefox-nightly/firefox %u
+# Terminal=false
+# X-MultipleArgs=false
+# Type=Application
+# Icon=/opt/firefox-nightly/browser/chrome/icons/default/default128.png
+# Categories=GNOME;GTK;Network;WebBrowser;
+# MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;x-scheme-handler/chrome;video/webm;application/x-xpinstall;
+# StartupNotify=true
+# Actions=new-window;new-private-window;
+
+# [Desktop Action new-window]
+# Name=Open a New Window
+# Exec=/opt/firefox-nightly/firefox -new-window
+
+# [Desktop Action new-private-window]
+# Name=Open a New Private Window
+# Exec=/opt/firefox-nightly/firefox -private-window
+# ' >>  /usr/share/applications/firefox-nightly.desktop
+
+
+
+############ docker  ##############################
 sudo apt-get remove docker docker-engine docker.io containerd runc
 sudo apt-get update
 sudo apt-get -y install \
@@ -25,14 +63,14 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 #sudo snap install datagrip --classic 
 
 
-########### postgress
+########### postgress   #####################################
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 sudo apt-get update
 sudo apt-get -y install postgresql
 
 
-############# mongodb
+############# mongodb    ############################
 wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
 sudo apt-get install -y gnupg
 wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
@@ -44,7 +82,7 @@ sudo apt-get update
 sudo apt-get install -y mongodb-org
 
 
-############# redis
+############# redis  ################################
 # wget https://download.redis.io/releases/redis-6.2.4.tar.gz ; tar xzf redis-6.2.4.tar.gz ; cd redis-6.2.4 ; make
 
 
@@ -77,13 +115,13 @@ sudo npm install -g typescript
 #########################################################
 
 
-######## mysql
+######## mysql  #########################
 sudo apt install mysql-server mysql-client
 
 
 # sudo apt-get install pandoc texlive
 
-############# Update golang 
+############# Update golang ##########################
 
 git clone https://github.com/udhos/update-golang
 
@@ -96,6 +134,8 @@ sha256sum -c hash.txt
 sudo ./update-golang.sh
 
 go version
+
+
 
 
 
