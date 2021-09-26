@@ -35,9 +35,9 @@ sudo apt  install -y curl
 sudo apt install -y gnome-shell
 sudo apt install -y ubuntu-gnome-*
 sudo apt install -y gnome-tweak-tool 
-sudo apt install gnome-shell-extensions
+sudo apt install -y gnome-shell-extensions
 sudo apt install -y gnome-tweaks ; sudo apt install -y alacarte ; sudo apt install -y dconf-editor
-sudo apt install avro-bin 
+sudo apt install -y avro-bin 
 
 
 # https://www.gnome-look.org/p/1241688/
@@ -80,10 +80,10 @@ sudo apt install -y  obs-studio
 
 sudo apt install -y qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils ; sudo apt install -y virt-manager
 
-# wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install ./google-chrome-stable_current_amd64.deb && rm google-chrome-stable_current_amd64.deb
+# wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install -y ./google-chrome-stable_current_amd64.deb && rm google-chrome-stable_current_amd64.deb
 
 
-sudo apt install -y openvpn dialog python3-pip python3-setuptools  ;  sudo pip3 install protonvpn-cli #; sudo protonvpn init
+sudo apt install -y openvpn dialog python3-pip python3-setuptools  ;  sudo pip3 install -y protonvpn-cli #; sudo protonvpn init
 
 
 
@@ -126,6 +126,11 @@ brew install gcc
 # https://www.gnome-look.org/p/1241688
 # https://www.gnome-look.org/p/1346778
 # https://www.gnome-look.org/p/1166289
+# https://www.gnome-look.org/p/1099856
+# sudo add-apt-repository ppa:papirus/papirus
+# sudo apt install -y papirus-icon-theme papirus-folders 
+# https://www.gnome-look.org/p/1366371/
+# https://www.gnome-look.org/p/1405756
 
 # THEME
 # echo -ne '\n' | sudo add-apt-repository ppa:numix/ppa
@@ -173,8 +178,41 @@ Name=Open a New Private Window
 Exec=/opt/firefox-developer-edition/firefox -private-window
 ' >>  /usr/share/applications/firefox-developer-edition.desktop
 
+################# anbox ##################
+# sudo snap install --devmode --beta anbox
+# sudo apt install wget curl lzip tar unzip squashfs-tools
+# wget https://raw.githubusercontent.com/geeks-r-us/anbox-playstore-installer/master/install-playstore.sh
+# chmod +x install-playstore.sh
+# ./install-playstore.sh
+# anbox.appmgr
 
+
+############# gdm3 login background change ###############
+# sudo apt install libglib2.0-dev
+# sudo apt install libgtk-3-dev
+# sudo apt install libpolkit-gobject-1-dev
+#  git clone https://github.com/thiggy01/gdm-background
+# cd gdm-background
+# make
+# sudo make install
+
+sudo apt install-y build-essential
+sudo add-apt-repository ppa:papirus/papirus
+sudo apt install -y papirus-icon-theme papirus-folders
  
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
 
 
 

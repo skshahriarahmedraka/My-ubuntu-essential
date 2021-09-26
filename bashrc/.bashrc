@@ -138,15 +138,15 @@ fi
 
 
 
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:$HOME/.cargo/bin
-export PATH="$PATH:$(go env GOPATH)/bin"
-export PATH=$PATH:/home/ahmed/.linuxbrew/bin
+# export PATH=$PATH:/usr/local/go/bin
+# export PATH=$PATH:$HOME/.cargo/bin
+# export PATH="$PATH:$(go env GOPATH)/bin"
+# export PATH=$PATH:/home/ahmed/.linuxbrew/bin
 
 
 
 
  
-. "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"
 
  
