@@ -1,6 +1,15 @@
 #! /bin/bash
 
 
+####### vue
+sudo apt install -y npm
+
+sudo npm install vue@next
+
+sudo npm install -g @vue/cli
+
+sudo npm install -g typescript
+
 ################ firefox-nightly ############################
 #  cd ~
 #  curl -L -o ~/firefox.tar.bz2  "https://download.mozilla.org/?product=firefox-nightly-latest-ssl&os=linux64&lang=en-US"
@@ -60,7 +69,7 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 
 
 # datagrip
-#sudo snap install datagrip --classic 
+sudo snap install datagrip --classic 
 
 
 ########### postgress   #####################################
@@ -83,17 +92,10 @@ sudo apt-get install -y mongodb-org
 
 
 ############# redis  ################################
-# wget https://download.redis.io/releases/redis-6.2.4.tar.gz ; tar xzf redis-6.2.4.tar.gz ; cd redis-6.2.4 ; make
+ wget https://download.redis.io/releases/redis-6.2.4.tar.gz ; tar xzf redis-6.2.4.tar.gz ; cd redis-6.2.4 ; make
 
 
-####### vue
-sudo apt install -y npm
 
-sudo npm install vue@next
-
-sudo npm install -g @vue/cli
-
-sudo npm install -g typescript
 
 ############ show keypress on screen ##############3
 
@@ -123,17 +125,17 @@ sudo apt install mysql-server mysql-client
 
 ############# Update golang ##########################
 
-git clone https://github.com/udhos/update-golang
+# git clone https://github.com/udhos/update-golang
 
-cd update-golang
+# cd update-golang
 
-wget -qO hash.txt https://raw.githubusercontent.com/udhos/update-golang/master/update-golang.sh.sha256
+# wget -qO hash.txt https://raw.githubusercontent.com/udhos/update-golang/master/update-golang.sh.sha256
 
-sha256sum -c hash.txt
+# sha256sum -c hash.txt
 
-sudo ./update-golang.sh
+# sudo ./update-golang.sh
 
-go version
+# go version
 
 
 

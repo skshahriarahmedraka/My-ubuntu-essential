@@ -4,13 +4,14 @@
 sudo apt update
 sudo apt -y upgrade
 sudo apt -y full-upgrade 
+sudo apt install -y build-essential
 
 
 
-gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
-gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
-gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'cycle-windows'
-gsettings set org.gnome.shell.extensions.dash-to-dock middle-click-action 'minimize-or-previews'
+# gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
+# gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
+# gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'cycle-windows'
+# gsettings set org.gnome.shell.extensions.dash-to-dock middle-click-action 'minimize-or-previews'
 # gsettings set org.gnome.settings-daemon.plugins.power percentage-critical 15
 # gsettings set org.gnome.settings-daemon.plugins.power percentage-low  15
 # gsettings set org.gnome.settings-daemon.plugins.power critical-battery-action  'shutdown'
@@ -30,7 +31,7 @@ sudo apt install -y gufw
 
 
 # keep dns 8.8.8.8 , 8.8.4.4
-
+sudo apt install net-tools 
 sudo apt  install -y curl
 sudo apt install -y gnome-shell
 sudo apt install -y ubuntu-gnome-*
@@ -73,6 +74,10 @@ sudo apt install -y deluge
 
 sudo snap install atom --classic
 
+sudo add-apt-repository ppa:libreoffice/ppa
+sudo apt update 
+sudo apt -y upgrade 
+sudo apt install -y libreoffice*
 # https://www.libreoffice.org/download/download/
 # sudo snap install wps-2019-snap
 
@@ -80,7 +85,7 @@ sudo apt install -y  obs-studio
 
 sudo apt install -y qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils ; sudo apt install -y virt-manager
 
-# wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install -y ./google-chrome-stable_current_amd64.deb && rm google-chrome-stable_current_amd64.deb
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install -y ./google-chrome-stable_current_amd64.deb && rm google-chrome-stable_current_amd64.deb
 
 
 sudo apt install -y openvpn dialog python3-pip python3-setuptools  ;  sudo pip3 install -y protonvpn-cli #; sudo protonvpn init
@@ -93,14 +98,8 @@ sudo apt install -y ttf-mscorefonts-installer #carlito is calibri & caladea is c
 sudo fc-cache -f -v
 
 ######################## homebrew install ##########################
- /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
-test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-test -r ~/.profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
-echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
-echo 'export PATH=$PATH:/home/$USER/.linuxbrew/bin' >> ~/.bashrc 
-brew install gcc
+
+
 
 
 ############   important path should be copy paste in .bashrc if needed ####################
@@ -123,6 +122,22 @@ brew install gcc
 # https://extensions.gnome.org/extension/1085/simple-net-speed/
 
 ######### themes ###############
+# Qogir cursors
+# https://www.opendesktop.org/s/Gnome/p/1366182  
+# Material Cursors
+# https://www.opendesktop.org/s/Gnome/p/1346778
+
+# WhiteSur cursors
+# https://www.opendesktop.org/s/Gnome/p/1411743
+
+# GoogleDot
+# https://www.opendesktop.org/s/Gnome/p/1215613
+# Bibata
+# https://www.opendesktop.org/s/Gnome/p/1197198
+# McMojave cursors
+# https://www.opendesktop.org/s/Gnome/p/1355701
+
+
 # https://www.gnome-look.org/p/1241688
 # https://www.gnome-look.org/p/1346778
 # https://www.gnome-look.org/p/1166289
@@ -196,7 +211,7 @@ Exec=/opt/firefox-developer-edition/firefox -private-window
 # make
 # sudo make install
 
-sudo apt install-y build-essential
+
 sudo add-apt-repository ppa:papirus/papirus
 sudo apt install -y papirus-icon-theme papirus-folders
  

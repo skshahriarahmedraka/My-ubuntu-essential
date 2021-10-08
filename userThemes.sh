@@ -15,6 +15,10 @@ git clone  https://github.com/paullinuxthemer/Mc-OS-themes.git
 cd Mc-OS-themes
 cp -Rf Mc* ~/.themes/
 
+############ homebrew ###############
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/$USER/.profile
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 
 
