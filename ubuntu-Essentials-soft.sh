@@ -17,12 +17,12 @@ sudo apt install -y build-essential
 # gsettings set org.gnome.settings-daemon.plugins.power critical-battery-action  'shutdown'
 # gsettings set org.gnome.settings-daemon.plugins.power percentage-action 15
 
-################ GPU driver
+echo "################ GPU driver###############"
 # echo -ne '\n' | sudo add-apt-repository ppa:graphics-drivers/ppa
 # ubuntu-drivers devices
 # sudo ubuntu-drivers autoinstall
 
-############## firewall################
+echo "############## firewall################"
 # sudo ufw enable
 # sudo ufw allow 22/tcp
 # sudo ufw allow http
@@ -39,6 +39,11 @@ sudo apt install -y gnome-tweak-tool
 sudo apt install -y gnome-shell-extensions
 sudo apt install -y gnome-tweaks ; sudo apt install -y alacarte ; sudo apt install -y dconf-editor
 sudo apt install -y avro-bin 
+sudo apt install -y ibus-avro
+bash -c "$(wget -q https://raw.githubusercontent.com/OpenBangla/OpenBangla-Keyboard/master/tools/install.sh -O -)"
+# ibus restart
+
+
 
 
 # https://www.gnome-look.org/p/1241688/
@@ -85,15 +90,17 @@ sudo apt install -y  obs-studio
 
 sudo apt install -y qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils ; sudo apt install -y virt-manager
 
+echo "################ google Chrome ###############"
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install -y ./google-chrome-stable_current_amd64.deb && rm google-chrome-stable_current_amd64.deb
 
 
+echo "########## protonVPN ##################"
 sudo apt install -y openvpn dialog python3-pip python3-setuptools  ;  sudo pip3 install -y protonvpn-cli #; sudo protonvpn init
 
 
 
 
-##################### microsoft fonts########################
+echo "##################### microsoft fonts########################"
 sudo apt install -y ttf-mscorefonts-installer #carlito is calibri & caladea is cambria 
 sudo fc-cache -f -v
 
@@ -154,7 +161,7 @@ sudo fc-cache -f -v
 
 
 
-################ firefox developer Edition ############################
+echo "################ firefox developer Edition ############################"
  cd ~
  curl -L -o ~/firefox.tar.bz2  "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=en-US"
  tar xjf firefox.tar.bz2
@@ -211,7 +218,7 @@ Exec=/opt/firefox-developer-edition/firefox -private-window
 # make
 # sudo make install
 
-
+echo "######### installing papricus ###########"
 sudo add-apt-repository ppa:papirus/papirus
 sudo apt install -y papirus-icon-theme papirus-folders
  
