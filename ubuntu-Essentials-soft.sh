@@ -42,7 +42,7 @@ sudo apt install -y avro-bin
 sudo apt install -y ibus-avro
 bash -c "$(wget -q https://raw.githubusercontent.com/OpenBangla/OpenBangla-Keyboard/master/tools/install.sh -O -)"
 # ibus restart
-
+sudo apt install -y python3-pip
 
 
 
