@@ -30,3 +30,51 @@ echo "######### GnomeExtentions ###############"
 ./install-gnome-extensions.sh --enable --file GnomeExtentions.txt
 
 
+echo "######### Name :    fusuma touch gestures (anything you want)#############"
+# https://dgviranmalaka.medium.com/how-to-enhance-touch-pad-gestures-like-mac-in-ubuntu-18-04-laptop-f5f25d5a0b4f
+sudo gpasswd -a $USER input
+sudo apt-get install libinput-tools
+sudo apt-get install xdotool
+sudo apt-get install ruby
+sudo gem install fusuma
+cd ~                         # go to HOME dir
+cd .config                 # go to user config dir
+mkdir fusuma && cd fusuma/ 
+touch config.yml  
+ 
+echo "
+swipe:
+  3: 
+    left: 
+      command: 'xdotool key alt+Shift+Tab'
+    right: 
+      command: 'xdotool key alt+Tab'
+    up: 
+      command: 'xdotool key super'
+    down: 
+      command: 'xdotool key super'
+  4:
+    left: 
+      command: 'xdotool key alt+Left'
+    right: 
+      command: 'xdotool key alt+Right'
+    up: 
+      command: 'xdotool key ctrl+alt+Down'
+    down: 
+      command: 'xdotool key ctrl+alt+Up'
+pinch:
+  in:
+    command: 'xdotool key ctrl+plus'
+  out:
+     command: 'xdotool key ctrl+minus'
+
+threshold:
+  swipe: 0.4
+  pinch: 0.4
+
+interval:
+  swipe: 0.8
+  pinch: 0.1
+" >> config.yml
+
+sudo fusuma

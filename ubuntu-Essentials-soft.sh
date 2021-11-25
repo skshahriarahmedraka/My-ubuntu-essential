@@ -5,6 +5,8 @@ sudo apt update
 sudo apt -y upgrade
 sudo apt -y full-upgrade 
 sudo apt install -y build-essential
+sudo apt install ntp ntpdate
+sudo ntpdate ntp.ubuntu.com
 
 
 
@@ -27,7 +29,7 @@ echo "############## firewall################"
 # sudo ufw allow 22/tcp
 # sudo ufw allow http
 # sudo ufw allow https
-sudo apt install -y gufw 
+# sudo apt install -y gufw 
 
 
 # keep dns 8.8.8.8 , 8.8.4.4
@@ -207,6 +209,8 @@ Exec=/opt/firefox-developer-edition/firefox -private-window
 # chmod +x install-playstore.sh
 # ./install-playstore.sh
 # anbox.appmgr
+#  sudo apt install android-tools-adb android-tools-fastboot -y
+
 
 
 ############# gdm3 login background change ###############
