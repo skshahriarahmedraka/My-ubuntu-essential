@@ -11,39 +11,39 @@ sudo npm install -g @vue/cli
 sudo npm install -g typescript
 
 ################ firefox-nightly ############################
-#  cd ~
-#  curl -L -o ~/firefox.tar.bz2  "https://download.mozilla.org/?product=firefox-nightly-latest-ssl&os=linux64&lang=en-US"
-#  tar xjf firefox.tar.bz2
-#  sudo mv  firefox /opt/firefox-nightly
-#  sudo chmod 777 -R /opt/firefox-nightly
-# touch  /usr/share/applications/firefox-nightly.desktop
-# echo '
-# [Desktop Entry]
-# Version=1.0
-# Name=firefox-nightly
+  cd ~
+  curl -L -o ~/firefox.tar.bz2  "https://download.mozilla.org/?product=firefox-nightly-latest-ssl&os=linux64&lang=en-US"
+  tar xjf firefox.tar.bz2
+  sudo mv  firefox /opt/firefox-nightly
+  sudo chmod 777 -R /opt/firefox-nightly
+ touch  /usr/share/applications/firefox-nightly.desktop
+ echo '
+ [Desktop Entry]
+ Version=1.0
+ Name=firefox-nightly
 
-# GenericName=Web Browser
+ GenericName=Web Browser
 
-# Keywords=Internet;WWW;Browser;Web;Explorer 
+ Keywords=Internet;WWW;Browser;Web;Explorer 
 
-# Exec=/opt/firefox-nightly/firefox %u
-# Terminal=false
-# X-MultipleArgs=false
-# Type=Application
-# Icon=/opt/firefox-nightly/browser/chrome/icons/default/default128.png
-# Categories=GNOME;GTK;Network;WebBrowser;
-# MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;x-scheme-handler/chrome;video/webm;application/x-xpinstall;
-# StartupNotify=true
-# Actions=new-window;new-private-window;
+ Exec=/opt/firefox-nightly/firefox %u
+ Terminal=false
+ X-MultipleArgs=false
+ Type=Application
+ Icon=/opt/firefox-nightly/browser/chrome/icons/default/default128.png
+ Categories=GNOME;GTK;Network;WebBrowser;
+ MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;x-scheme-handler/chrome;video/webm;application/x-xpinstall;
+ StartupNotify=true
+ Actions=new-window;new-private-window;
 
-# [Desktop Action new-window]
-# Name=Open a New Window
-# Exec=/opt/firefox-nightly/firefox -new-window
+ [Desktop Action new-window]
+ Name=Open a New Window
+ Exec=/opt/firefox-nightly/firefox -new-window
 
-# [Desktop Action new-private-window]
-# Name=Open a New Private Window
-# Exec=/opt/firefox-nightly/firefox -private-window
-# ' >>  /usr/share/applications/firefox-nightly.desktop
+ [Desktop Action new-private-window]
+ Name=Open a New Private Window
+ Exec=/opt/firefox-nightly/firefox -private-window
+ ' >>  /usr/share/applications/firefox-nightly.desktop
 
 
 
@@ -99,20 +99,20 @@ sudo apt-get install -y mongodb-org
 
 ############ show keypress on screen ##############3
 
-# sudo apt install screenkey
-# sudo apt install libx11-6 python3-gi gir1.2-gtk-3.0 python3-cairo python3-setuptools python3-distutils-extra fonts-font-awesome gir1.2-appindicator3-0.1 slop wget
+ sudo apt install screenkey
+ sudo apt install libx11-6 python3-gi gir1.2-gtk-3.0 python3-cairo python3-setuptools python3-distutils-extra fonts-font-awesome gir1.2-appindicator3-0.1 slop wget
 
-# wget https://gitlab.com/screenkey/screenkey/-/archive/v1.3/screenkey-v1.3.tar.gz
+ wget https://gitlab.com/screenkey/screenkey/-/archive/v1.3/screenkey-v1.3.tar.gz
 
-# tar -xvf screenkey-v1.3.tar.gz
+ tar -xvf screenkey-v1.3.tar.gz
 
-# cd screenkey-v1.3
+ cd screenkey-v1.3
 
-# sudo ./setup.py install
+ sudo ./setup.py install
 
-# sudo mkdir -p /usr/local/share/applications
+ sudo mkdir -p /usr/local/share/applications
 
-# sudo install data/screenkey.desktop /usr/local/share/applications
+ sudo install data/screenkey.desktop /usr/local/share/applications
 
 #########################################################
 
@@ -121,21 +121,21 @@ sudo apt-get install -y mongodb-org
 sudo apt install mysql-server mysql-client
 
 
-# sudo apt-get install pandoc texlive
+ sudo apt-get install pandoc texlive
 
 ############# Update golang ##########################
 
-# git clone https://github.com/udhos/update-golang
+ git clone https://github.com/udhos/update-golang
 
-# cd update-golang
+ cd update-golang
 
-# wget -qO hash.txt https://raw.githubusercontent.com/udhos/update-golang/master/update-golang.sh.sha256
+ wget -qO hash.txt https://raw.githubusercontent.com/udhos/update-golang/master/update-golang.sh.sha256
 
-# sha256sum -c hash.txt
+ sha256sum -c hash.txt
 
-# sudo ./update-golang.sh
+ sudo ./update-golang.sh
 
-# go version
+ go version
 
 
 

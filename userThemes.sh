@@ -9,6 +9,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'cycle-windows'
 gsettings set org.gnome.shell.extensions.dash-to-dock middle-click-action 'minimize-or-previews'
 gsettings set org.gnome.shell.extensions.dash-to-dock isolate-workspaces  true
+gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
 
 ibus restart
 
