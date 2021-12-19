@@ -236,8 +236,13 @@ sudo apt install -y papirus-icon-theme papirus-folders
  
  
  
+#gnome-extensions list
+#gnome-extensions disable ubuntu-dock@ubuntu.com
 
-
+#### appimage store
+# https://github.com/prateekmedia/appimagepool/releases/tag/4.4.0
+#### install downloaded appimage
+# https://github.com/TheAssassin/AppImageLauncher
 
 
 
