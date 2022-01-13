@@ -1,12 +1,12 @@
 #! /bin/bash
 
 
-#sudo apt update
-#sudo apt -y upgrade
-#sudo apt -y full-upgrade 
-#sudo apt install -y build-essential
-#sudo apt install -y ntp ntpdate
-#sudo ntpdate ntp.ubuntu.com
+sudo apt update
+sudo apt -y upgrade
+sudo apt -y full-upgrade 
+sudo apt install -y build-essential
+sudo apt install -y ntp ntpdate
+sudo ntpdate ntp.ubuntu.com
 sudo apt install -y pm-utils 
 
 
@@ -45,7 +45,7 @@ sudo apt install -y ibus-avro
 bash -c "$(wget -q https://raw.githubusercontent.com/OpenBangla/OpenBangla-Keyboard/master/tools/install.sh -O -)"
 # ibus restart
 sudo apt install -y python3-pip
-
+sudo apt install okular -y
 
 
 # https://www.gnome-look.org/p/1241688/
@@ -62,8 +62,10 @@ sudo apt install -y ubuntu-restricted-extras
 # sudo apt install -y git  make gcc libglib2.0-dev-bin libgtk-3-dev  libpolkit-gobject-1-dev ; git clone https://github.com/thiggy01/gdm-background ; cd gdm-background ; make ; sudo make install
 
 
-# sudo apt install -y lightdm
-# sudo apt install -y lightdm-settings
+sudo apt install -y lightdm
+sudo apt install -y lightdm-settings
+# sudo apt install -y lightdm-kde-greeter
+sudo apt-get install -y slick-greeter 
 
 sudo apt install -y tlp tlp-rdw
 sudo apt install -y preload
@@ -92,16 +94,16 @@ sudo snap install atom --classic
 # https://www.libreoffice.org/download/download/
 # sudo snap install wps-2019-snap
 
-#sudo apt install -y  obs-studio 
+sudo apt install -y  obs-studio 
 
-# sudo apt install -y qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils ; sudo apt install -y virt-manager
+sudo apt install -y qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils ; sudo apt install -y virt-manager
 
 echo "################ google Chrome ###############"
-# wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install -y ./google-chrome-stable_current_amd64.deb && rm google-chrome-stable_current_amd64.deb
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install -y ./google-chrome-stable_current_amd64.deb && rm google-chrome-stable_current_amd64.deb
 
 
 echo "########## protonVPN ##################"
-#sudo apt install -y openvpn dialog python3-pip python3-setuptools  ;  sudo pip3 install -y protonvpn-cli #; sudo protonvpn init
+sudo apt install -y openvpn dialog python3-pip python3-setuptools  ;  sudo pip3 install -y protonvpn-cli #; sudo protonvpn init
 
 
 
@@ -168,17 +170,17 @@ sudo fc-cache -f -v
 
 
 echo "################ firefox developer Edition ############################"
- #cd ~
- #curl -L -o ~/firefox.tar.bz2  "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=en-US"
- #tar xjf firefox.tar.bz2
- #sudo mv  firefox /opt/firefox-developer-edition
- #sudo chmod 777 -R /opt/firefox-developer-edition
+cd ~
+curl -L -o ~/firefox.tar.bz2  "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=en-US"
+tar xjf firefox.tar.bz2
+sudo mv  firefox /opt/firefox-developer-edition
+sudo chmod 777 -R /opt/firefox-developer-edition
  
  
 
 
-# touch  /usr/share/applications/firefox-developer-edition.desktop
-# echo '
+touch  /usr/share/applications/firefox-developer-edition.desktop
+echo '
 [Desktop Entry]
 Version=1.0
 Name=firefox-developer-edition
@@ -244,6 +246,7 @@ sudo apt install -y papirus-icon-theme papirus-folders
 #### install downloaded appimage
 # https://github.com/TheAssassin/AppImageLauncher
 
+sudo cp ./wallpaper/warty-final-ubuntu.png /usr/share/backgrounds/
 
 
 

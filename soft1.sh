@@ -4,9 +4,9 @@
 ####### vue
 sudo apt install -y npm
 
-sudo npm install vue@next
+#sudo npm install vue@next
 
-sudo npm install -g @vue/cli
+#sudo npm install -g @vue/cli
 
 sudo npm install -g typescript
 
@@ -80,19 +80,19 @@ sudo apt-get -y install postgresql
 
 
 ############# mongodb    ############################
-wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
-sudo apt-get install -y gnupg
-wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+#wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+#sudo apt-get install -y gnupg
+#wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
 
-echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+#echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
 
-sudo apt-get update
+#sudo apt-get update
 
-sudo apt-get install -y mongodb-org
+#sudo apt-get install -y mongodb-org
 
 
 ############# redis  ################################
- wget https://download.redis.io/releases/redis-6.2.4.tar.gz ; tar xzf redis-6.2.4.tar.gz ; cd redis-6.2.4 ; make
+# wget https://download.redis.io/releases/redis-6.2.4.tar.gz ; tar xzf redis-6.2.4.tar.gz ; cd redis-6.2.4 ; make
 
 
 
@@ -118,24 +118,24 @@ sudo apt-get install -y mongodb-org
 
 
 ######## mysql  #########################
-sudo apt install mysql-server mysql-client
+#sudo apt install mysql-server mysql-client
 
 
- sudo apt-get install pandoc texlive
+ #sudo apt-get install pandoc texlive
 
 ############# Update golang ##########################
 
- git clone https://github.com/udhos/update-golang
+ #git clone https://github.com/udhos/update-golang
 
- cd update-golang
+ #cd update-golang
 
- wget -qO hash.txt https://raw.githubusercontent.com/udhos/update-golang/master/update-golang.sh.sha256
+ #wget -qO hash.txt https://raw.githubusercontent.com/udhos/update-golang/master/update-golang.sh.sha256
 
- sha256sum -c hash.txt
+ #sha256sum -c hash.txt
 
- sudo ./update-golang.sh
+ #sudo ./update-golang.sh
 
- go version
+ #go version
 
 
 

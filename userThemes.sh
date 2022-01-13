@@ -10,7 +10,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'cycle-window
 gsettings set org.gnome.shell.extensions.dash-to-dock middle-click-action 'minimize-or-previews'
 gsettings set org.gnome.shell.extensions.dash-to-dock isolate-workspaces  true
 gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
-
+gsettings set org.gnome.desktop.background picture-uri "file://./wallpaper/wano.jpg"
 ibus restart
 
 
@@ -25,10 +25,10 @@ cp -Rf Mc* ~/.themes/
 #eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 echo "######### GnomeExtentions ###############"
- echo "MyPassword" | sudo -S apt install -y curl wget jq unzip
- rm -f ./install-gnome-extensions.sh; wget -N -q "https://raw.githubusercontent.com/cyfrost/install-gnome-extensions/master/install-gnome-extensions.sh" -O ./install-gnome-extensions.sh && chmod +x install-gnome-extensions.sh && ./install-gnome-extensions.sh
+# echo "MyPassword" | sudo -S apt install -y curl wget jq unzip
+# rm -f ./install-gnome-extensions.sh; wget -N -q "https://raw.githubusercontent.com/cyfrost/install-gnome-extensions/master/install-gnome-extensions.sh" -O ./install-gnome-extensions.sh && chmod +x install-gnome-extensions.sh && ./install-gnome-extensions.sh
 
-./install-gnome-extensions.sh --enable --file GnomeExtentions.txt
+#./install-gnome-extensions.sh --enable --file GnomeExtentions.txt
 
 
 echo "######### Name :    fusuma touch gestures (anything you want)#############"
