@@ -59,8 +59,8 @@ sudo apt install -y vlc gimp gparted synaptic bleachbit
 sudo apt install -y ubuntu-restricted-extras
 
 # TO CHANGE gdm3 LOGIN WALLPAPER
-# sudo apt install -y git  make gcc libglib2.0-dev-bin libgtk-3-dev  libpolkit-gobject-1-dev ; git clone https://github.com/thiggy01/gdm-background ; cd gdm-background ; make ; sudo make install
 
+# https://github.com/thiggy01/change-gdm-background/blob/master/change-gdm-background
 
 sudo apt install -y lightdm
 sudo apt install -y lightdm-settings
