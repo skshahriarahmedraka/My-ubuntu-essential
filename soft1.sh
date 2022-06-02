@@ -10,6 +10,8 @@ sudo apt install -y npm
 
 sudo npm install -g typescript
 
+sudo npm install -g degit
+
 ################ firefox-nightly ############################
   cd ~
   curl -L -o ~/firefox.tar.bz2  "https://download.mozilla.org/?product=firefox-nightly-latest-ssl&os=linux64&lang=en-US"
@@ -73,10 +75,10 @@ sudo snap install datagrip --classic
 
 
 ########### postgress   #####################################
-sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
-wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-sudo apt-get update
-sudo apt-get -y install postgresql
+#sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+#wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+#sudo apt-get update
+#sudo apt-get -y install postgresql
 
 
 ############# mongodb    ############################
@@ -99,20 +101,20 @@ sudo apt-get -y install postgresql
 
 ############ show keypress on screen ##############3
 
- sudo apt install screenkey
- sudo apt install libx11-6 python3-gi gir1.2-gtk-3.0 python3-cairo python3-setuptools python3-distutils-extra fonts-font-awesome gir1.2-appindicator3-0.1 slop wget
+ #sudo apt install screenkey
+ #sudo apt install libx11-6 python3-gi gir1.2-gtk-3.0 python3-cairo python3-setuptools python3-distutils-extra fonts-font-awesome gir1.2-appindicator3-0.1 slop wget
 
- wget https://gitlab.com/screenkey/screenkey/-/archive/v1.3/screenkey-v1.3.tar.gz
+ #wget https://gitlab.com/screenkey/screenkey/-/archive/v1.3/screenkey-v1.3.tar.gz
 
- tar -xvf screenkey-v1.3.tar.gz
+ #tar -xvf screenkey-v1.3.tar.gz
 
- cd screenkey-v1.3
+ #cd screenkey-v1.3
 
- sudo ./setup.py install
+ #sudo ./setup.py install
 
- sudo mkdir -p /usr/local/share/applications
+ #sudo mkdir -p /usr/local/share/applications
 
- sudo install data/screenkey.desktop /usr/local/share/applications
+ #sudo install data/screenkey.desktop /usr/local/share/applications
 
 #########################################################
 

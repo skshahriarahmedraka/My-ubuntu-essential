@@ -54,7 +54,9 @@ sudo apt install okular -y
 sudo apt install -y timeshift
 sudo apt install -y git
 sudo apt install -y calibre
-sudo apt install -y mpv
+sudo apt install deepin-movie
+
+# sudo apt install -y mpv
 sudo apt install -y vlc gimp gparted synaptic bleachbit
 sudo apt install -y ubuntu-restricted-extras
 
@@ -62,10 +64,10 @@ sudo apt install -y ubuntu-restricted-extras
 
 # https://github.com/thiggy01/change-gdm-background/blob/master/change-gdm-background
 
-sudo apt install -y lightdm
-sudo apt install -y lightdm-settings
+#sudo apt install -y lightdm
+#sudo apt install -y lightdm-settings
 # sudo apt install -y lightdm-kde-greeter
-sudo apt-get install -y slick-greeter 
+#sudo apt-get install -y slick-greeter 
 
 sudo apt install -y tlp tlp-rdw
 sudo apt install -y preload
@@ -85,7 +87,7 @@ sudo apt install -y deluge
 #sudo apt install -y tasksel 
 
 
-sudo snap install atom --classic
+#sudo snap install atom --classic
 
 #sudo add-apt-repository ppa:libreoffice/ppa
 #sudo apt update 
@@ -179,7 +181,7 @@ sudo chmod 777 -R /opt/firefox-developer-edition
  
 
 
-touch  /usr/share/applications/firefox-developer-edition.desktop
+touch  /usr/share/applications/firefox-aurora.desktop
 echo '
 [Desktop Entry]
 Version=1.0
@@ -206,7 +208,7 @@ Exec=/opt/firefox-developer-edition/firefox -new-window
 [Desktop Action new-private-window]
 Name=Open a New Private Window
 Exec=/opt/firefox-developer-edition/firefox -private-window
-' >>  /usr/share/applications/firefox-developer-edition.desktop
+' >>  /usr/share/applications/firefox-aurora.desktop
 
 ################# anbox ##################
 # sudo snap install --devmode --beta anbox
@@ -246,7 +248,7 @@ sudo apt install -y papirus-icon-theme papirus-folders
 #### install downloaded appimage
 # https://github.com/TheAssassin/AppImageLauncher
 
-sudo cp ./wallpaper/warty-final-ubuntu.png /usr/share/backgrounds/
+# sudo cp ./wallpaper/warty-final-ubuntu.png /usr/share/backgrounds/
 
 
 
