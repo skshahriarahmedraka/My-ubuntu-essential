@@ -17,7 +17,7 @@ sudo apt install --install-recommends winehq-devel -y
 
 
 sudo add-apt-repository --yes  ppa:kisak/kisak-mesa
-sudo apt dist-upgrade -y
+sudo apt dist-upgrade
 sudo apt install -y mesa-vulkan-drivers mesa-vulkan-drivers:i386
 
 
@@ -25,4 +25,4 @@ sudo add-apt-repository --yes  ppa:lutris-team/lutris
 sudo apt update
 sudo apt install lutris -y
 
-sudo apt update && sudo apt -y upgrade
+

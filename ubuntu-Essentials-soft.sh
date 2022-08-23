@@ -45,8 +45,11 @@ sudo apt install -y ibus-avro
 bash -c "$(wget -q https://raw.githubusercontent.com/OpenBangla/OpenBangla-Keyboard/master/tools/install.sh -O -)"
 # ibus restart
 sudo apt install -y python3-pip
-sudo apt install okular -y
+#sudo apt install okular -y
 
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+rm -rf /usr/local/go && tar -C /usr/local -xzf go1.19.linux-amd64.tar.gz
 
 # https://www.gnome-look.org/p/1241688/
 # sudo snap install mojave-themes
@@ -54,7 +57,7 @@ sudo apt install okular -y
 sudo apt install -y timeshift
 sudo apt install -y git
 sudo apt install -y calibre
-sudo apt install deepin-movie
+sudo apt install -y deepin-movie
 
 # sudo apt install -y mpv
 sudo apt install -y vlc gimp gparted synaptic bleachbit
@@ -73,12 +76,12 @@ sudo apt install -y tlp tlp-rdw
 sudo apt install -y preload
 
 
-sudo snap install telegram-desktop
+#sudo snap install telegram-desktop
 
 
 
 
-sudo snap install --classic code
+#sudo snap install --classic code
 
 sudo apt install -y deluge
 
@@ -171,44 +174,38 @@ sudo fc-cache -f -v
 
 
 
-echo "################ firefox developer Edition ############################"
-cd ~
-curl -L -o ~/firefox.tar.bz2  "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=en-US"
-tar xjf firefox.tar.bz2
-sudo mv  firefox /opt/firefox-developer-edition
-sudo chmod 777 -R /opt/firefox-developer-edition
- 
- 
+
+############### postman install 
+wget https://dl.pstmn.io/download/latest/linux64
+sudo tar -xvf linux64 -C /usr/bin
+
+echo 'export PATH="$PATH:/usr/bin/Postman"' >> ~/.bashrc
 
 
-touch  /usr/share/applications/firefox-aurora.desktop
+
+
+sudo touch /usr/share/applications/Postman.desktop
+
 echo '
 [Desktop Entry]
-Version=1.0
-Name=firefox-developer-edition
-
-GenericName=Web Browser
-
-Keywords=Internet;WWW;Browser;Web;Explorer 
-
-Exec=/opt/firefox-developer-edition/firefox %u
+Name=Postman API Tool
+GenericName=Postman
+Comment=Testing API
+Exec=/usr/bin/Postman/Postman
 Terminal=false
 X-MultipleArgs=false
 Type=Application
-Icon=/opt/firefox-developer-edition/browser/chrome/icons/default/default128.png
-Categories=GNOME;GTK;Network;WebBrowser;
-MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;x-scheme-handler/chrome;video/webm;application/x-xpinstall;
+Icon=/usr/bin/Postman/app/resources/app/assets/icon.png
+StartupWMClass=Postman
 StartupNotify=true
-Actions=new-window;new-private-window;
+' >> /usr/share/applications/Postman.desktop
 
-[Desktop Action new-window]
-Name=Open a New Window
-Exec=/opt/firefox-developer-edition/firefox -new-window
 
-[Desktop Action new-private-window]
-Name=Open a New Private Window
-Exec=/opt/firefox-developer-edition/firefox -private-window
-' >>  /usr/share/applications/firefox-aurora.desktop
+cp /usr/share/applications/Postman.desktop ~/Desktop/
+
+
+
+
 
 ################# anbox ##################
 # sudo snap install --devmode --beta anbox
@@ -249,6 +246,25 @@ sudo apt install -y papirus-icon-theme papirus-folders
 # https://github.com/TheAssassin/AppImageLauncher
 
 # sudo cp ./wallpaper/warty-final-ubuntu.png /usr/share/backgrounds/
+
+echo "[-] Download fonts [-]"
+echo "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/DroidSansMono.zip"
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/DroidSansMono.zip
+unzip DroidSansMono.zip -d ~/.fonts
+fc-cache -fv
+echo "done!"
+
+
+
+# Download the latest stable version of VS Code and store it in a temporary location
+wget https://vscode-update.azurewebsites.net/latest/linux-deb-x64/stable -O /tmp/code_latest_amd64.deb
+
+# Now, install the newly downloaded VS Code
+sudo dpkg -i /tmp/code_latest_amd64.deb
+
+
+
+sudo snap install code-insiders --classic
 
 
 
