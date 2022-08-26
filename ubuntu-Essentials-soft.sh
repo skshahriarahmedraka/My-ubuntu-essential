@@ -76,7 +76,7 @@ sudo apt install -y tlp tlp-rdw
 sudo apt install -y preload
 
 
-#sudo snap install telegram-desktop
+sudo snap install telegram-desktop
 
 
 
@@ -244,7 +244,7 @@ sudo apt install -y papirus-icon-theme papirus-folders
 # https://github.com/prateekmedia/appimagepool/releases/tag/4.4.0
 #### install downloaded appimage
 # https://github.com/TheAssassin/AppImageLauncher
-
+# https://github.com/marktext/marktext
 # sudo cp ./wallpaper/warty-final-ubuntu.png /usr/share/backgrounds/
 
 echo "[-] Download fonts [-]"
@@ -266,6 +266,12 @@ sudo dpkg -i /tmp/code_latest_amd64.deb
 
 sudo snap install code-insiders --classic
 
+## install Orchis-theme
+echo "########### install Orchis-theme ########"
+git clone https://github.com/vinceliuice/Orchis-theme.git
+cd Orchis-theme
+./install.sh -l
+cd -
 
 
 

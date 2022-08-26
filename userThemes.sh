@@ -22,8 +22,12 @@ cp -Rf Mc* ~/.themes/
 
 ############ homebrew ###############
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-#echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/$USER/.profile
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/$USER/.profile
+echo '\n eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/$USER/.bashrc
 #eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+############# install golang #################
+brew install go
 
 echo "######### GnomeExtentions ###############"
 # echo "MyPassword" | sudo -S apt install -y curl wget jq unzip
