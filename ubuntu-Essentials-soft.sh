@@ -46,10 +46,17 @@ bash -c "$(wget -q https://raw.githubusercontent.com/OpenBangla/OpenBangla-Keybo
 # ibus restart
 sudo apt install -y python3-pip
 #sudo apt install okular -y
+echo "################ google Chrome ###############"
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install -y ./google-chrome-stable_current_amd64.deb && rm google-chrome-stable_current_amd64.deb
 
 
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-rm -rf /usr/local/go && tar -C /usr/local -xzf go1.19.linux-amd64.tar.gz
+sudo snap install code-insiders --classic
+sudo snap install code --classic
+
+
+
+# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+#rm -rf /usr/local/go && tar -C /usr/local -xzf go1.19.linux-amd64.tar.gz
 
 # https://www.gnome-look.org/p/1241688/
 # sudo snap install mojave-themes
@@ -103,12 +110,10 @@ sudo apt install -y  obs-studio
 
 sudo apt install -y qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils ; sudo apt install -y virt-manager
 
-echo "################ google Chrome ###############"
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install -y ./google-chrome-stable_current_amd64.deb && rm google-chrome-stable_current_amd64.deb
 
 
 echo "########## protonVPN ##################"
-sudo apt install -y openvpn dialog python3-pip python3-setuptools  ;  sudo pip3 install -y protonvpn-cli #; sudo protonvpn init
+sudo apt install -y openvpn dialog python3-pip python3-setuptools  ;  sudo pip3 install protonvpn-cli #; sudo protonvpn init
 
 
 
@@ -232,7 +237,13 @@ sudo add-apt-repository ppa:papirus/papirus
 sudo apt install -y papirus-icon-theme papirus-folders
  
  
- 
+## install Orchis-theme
+echo "########### install Orchis-theme ########"
+git clone https://github.com/vinceliuice/Orchis-theme.git
+cd Orchis-theme
+./install.sh -l
+cd -
+rm -Rf Orchis-theme
  
  
  
@@ -240,7 +251,7 @@ sudo apt install -y papirus-icon-theme papirus-folders
 #gnome-extensions list
 #gnome-extensions disable ubuntu-dock@ubuntu.com
 
-#### appimage store
+#### app store
 # https://github.com/prateekmedia/appimagepool/releases/tag/4.4.0
 #### install downloaded appimage
 # https://github.com/TheAssassin/AppImageLauncher
@@ -253,25 +264,22 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/DroidSansM
 unzip DroidSansMono.zip -d ~/.fonts
 fc-cache -fv
 echo "done!"
+rm DroidSansMono.zip
 
 
 
 # Download the latest stable version of VS Code and store it in a temporary location
-wget https://vscode-update.azurewebsites.net/latest/linux-deb-x64/stable -O /tmp/code_latest_amd64.deb
+#wget https://vscode-update.azurewebsites.net/latest/linux-deb-x64/stable -O /tmp/code_latest_amd64.deb
 
 # Now, install the newly downloaded VS Code
-sudo dpkg -i /tmp/code_latest_amd64.deb
+#sudo dpkg -i /tmp/code_latest_amd64.deb
 
+wget -qO - https://github.com/PRATAP-KUMAR/ubuntu-gdm-set-background/archive/main.tar.gz | tar zx --strip-components=1 ubuntu-gdm-set-background-main/ubuntu-gdm-set-background
 
+sudo ./ubuntu-gdm-set-background --image ./wallpaper/dr.jpg
 
-sudo snap install code-insiders --classic
+rm ubuntu-gdm-set-background
 
-## install Orchis-theme
-echo "########### install Orchis-theme ########"
-git clone https://github.com/vinceliuice/Orchis-theme.git
-cd Orchis-theme
-./install.sh -l
-cd -
 
 
 

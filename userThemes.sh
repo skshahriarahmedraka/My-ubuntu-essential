@@ -10,20 +10,20 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'cycle-window
 gsettings set org.gnome.shell.extensions.dash-to-dock middle-click-action 'minimize-or-previews'
 gsettings set org.gnome.shell.extensions.dash-to-dock isolate-workspaces  true
 gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
-gsettings set org.gnome.desktop.background picture-uri "file://./wallpaper/wano.jpg"
+#  gsettings set org.gnome.desktop.background picture-uri "file://./wallpaper/wano.jpg"
 gsettings set org.gnome.shell.app-switcher current-workspace-only true
 ibus restart
 
 
 echo "###### mac os theme ####" 
-git clone  https://github.com/paullinuxthemer/Mc-OS-themes.git
-cd Mc-OS-themes
-cp -Rf Mc* ~/.themes/
+#git clone  https://github.com/paullinuxthemer/Mc-OS-themes.git
+#cd Mc-OS-themes
+#cp -Rf Mc* ~/.themes/
 
 ############ homebrew ###############
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/$USER/.profile
-echo '\n eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/$USER/.bashrc
+echo ' eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/$USER/.bashrc
 #eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 ############# install golang #################
