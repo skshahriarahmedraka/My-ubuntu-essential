@@ -16,7 +16,7 @@ sudo npm install -g typescript
 
 sudo npm install -g degit
 
-
+npm install -g nodemon # or using yarn: yarn global add nodemon
 
 
 ####### database management datagrip
