@@ -1,0 +1,4 @@
+https://extensions.gnome.org/extension/19/user-themes/ https://extensions.gnome.org/extension/2935/control-blur-effect-on-lock-screen/
+https://extensions.gnome.org/extension/1319/gsconnect/
+https://extensions.gnome.org/extension/21/workspace-indicator/
+https://extensions.gnome.org/extension/1085/simple-net-speed/
