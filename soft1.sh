@@ -5,8 +5,8 @@
 # sudo apt install -y npm
 #curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 #sudo apt-get install -y nodejs
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-sudo apt-get install -y nodejs
+#curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+#sudo apt-get install -y nodejs
 
 #sudo npm install vue@next
 
@@ -46,6 +46,16 @@ sudo snap install goland --classic
 #sudo apt-get update
 
 #sudo apt-get install -y mongodb-org
+
+sudo snap install figma-linux
+
+sudo snap install sublime-text --classic
+
+sudo snap install postman
+
+sudo snap install go --classic
+
+sudo snap install bun-js
 
 
 ############# redis  ################################

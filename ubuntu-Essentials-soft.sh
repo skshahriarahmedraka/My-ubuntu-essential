@@ -233,17 +233,17 @@ cp /usr/share/applications/Postman.desktop ~/Desktop/
 # sudo make install
 
 echo "######### installing papricus ###########"
-sudo add-apt-repository ppa:papirus/papirus
-sudo apt install -y papirus-icon-theme papirus-folders
+# sudo add-apt-repository ppa:papirus/papirus
+# sudo apt install -y papirus-icon-theme papirus-folders
  
  
 ## install Orchis-theme
 echo "########### install Orchis-theme ########"
-git clone https://github.com/vinceliuice/Orchis-theme.git
-cd Orchis-theme
-./install.sh -l
-cd -
-rm -Rf Orchis-theme
+# git clone https://github.com/vinceliuice/Orchis-theme.git
+#cd Orchis-theme
+#./install.sh -l
+#cd -
+#rm -Rf Orchis-theme
  
  
  
@@ -260,12 +260,12 @@ rm -Rf Orchis-theme
 
 echo "[-] Download fonts [-]"
 echo "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/DroidSansMono.zip"
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/DroidSansMono.zip
-touch ~/.fonts
-unzip DroidSansMono.zip -d ~/.fonts
-fc-cache -fv
-echo "done!"
-rm DroidSansMono.zip
+#wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/DroidSansMono.zip
+#touch ~/.fonts
+#unzip DroidSansMono.zip -d ~/.fonts
+#fc-cache -fv
+#echo "done!"
+#rm DroidSansMono.zip
 
 
 
@@ -306,6 +306,16 @@ $sudo snap install nvim --classic
 
 # sudo ./install.sh Hack
 # sudo ./install.sh HeavyData
+
+sudo add-apt-repository ppa:papirus/papirus
+sudo apt-get update
+sudo apt-get install papirus-icon-theme
+
+
+sudo snap install tela-icons
+
+sudo snap install mojave-themes
+
 
 
 
