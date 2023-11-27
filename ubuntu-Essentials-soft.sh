@@ -108,9 +108,10 @@ sudo apt install -y deluge
 
 sudo apt install -y  obs-studio 
 
-sudo apt install -y qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils ; sudo apt install -y virt-manager
+sudo apt install -y qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils ; sudo apt   install -y virt-manager
 
 
+brew install marked
 
 echo "########## protonVPN ##################"
 sudo apt install -y openvpn dialog python3-pip python3-setuptools  ;  sudo pip3 install protonvpn-cli #; sudo protonvpn init
@@ -308,13 +309,16 @@ $sudo snap install nvim --classic
 # sudo ./install.sh HeavyData
 
 sudo add-apt-repository ppa:papirus/papirus
-sudo apt-get update
-sudo apt-get install papirus-icon-theme
+sudo apt update
+sudo apt install papirus-icon-theme -y
 
 
 sudo snap install tela-icons
 
 sudo snap install mojave-themes
+
+flatpak install flathub com.github.marktext.marktext -y
+
 
 
 

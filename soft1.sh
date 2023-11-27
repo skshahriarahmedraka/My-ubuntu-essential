@@ -84,6 +84,7 @@ sudo snap install bun-js
 #########################################################
 
 
+
 ######## mysql  #########################
 #sudo apt install mysql-server mysql-client
 
