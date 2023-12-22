@@ -88,6 +88,10 @@ sudo snap install telegram-desktop
 
 
 
+sudo snap install emote
+
+
+
 #sudo snap install --classic code
 
 sudo apt install -y deluge
