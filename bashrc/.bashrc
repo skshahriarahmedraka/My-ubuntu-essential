@@ -137,16 +137,24 @@ fi
 
 
 
-
-# export PATH=$PATH:/usr/local/go/bin
+#### Rust path
 # export PATH=$PATH:$HOME/.cargo/bin
-# export PATH="$PATH:$(go env GOPATH)/bin"
-# export PATH=$PATH:/home/ahmed/.linuxbrew/bin
+# . "$HOME/.cargo/env"
 
-
+#### Homebrew
+# export PATH=$PATH:$PWD/.linuxbrew/bin
 
 
  
-# . "$HOME/.cargo/env"
+
+# Golang essential path
+# export PATH=$PATH:/usr/local/go/bin
+# export PATH="$PATH:$(go env GOPATH)/bin"
+
+
+
+
+
+
 
  
