@@ -37,9 +37,12 @@ echo "############## firewall################"
 sudo apt  install -y curl
 sudo apt install -y gnome-shell
 sudo apt install -y ubuntu-gnome-*
+sudo apt install -y ubuntu-restricted-extras
 sudo apt install -y gnome-tweak-tool 
 sudo apt install -y gnome-shell-extensions
 sudo apt install -y gnome-tweaks ; sudo apt install -y alacarte ; sudo apt install -y dconf-editor
+
+echo "################ Bangla support ################"
 sudo apt install -y avro-bin 
 sudo apt install -y ibus-avro
 bash -c "$(wget -q https://raw.githubusercontent.com/OpenBangla/OpenBangla-Keyboard/master/tools/install.sh -O -)"
@@ -50,8 +53,7 @@ echo "################ google Chrome ###############"
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install -y ./google-chrome-stable_current_amd64.deb && rm google-chrome-stable_current_amd64.deb
 
 
-sudo snap install code-insiders --classic
-sudo snap install code --classic
+
 
 
 
@@ -64,11 +66,10 @@ sudo snap install code --classic
 sudo apt install -y timeshift
 sudo apt install -y git
 sudo apt install -y calibre
-sudo apt install -y deepin-movie
+sudo apt install -y deepin-movie vlc mpv
 
-sudo apt install -y mpv
-sudo apt install -y vlc gimp gparted synaptic bleachbit
-sudo apt install -y ubuntu-restricted-extras
+sudo apt install -y 
+sudo apt install -y  gimp gparted synaptic bleachbit
 
 # TO CHANGE gdm3 LOGIN WALLPAPER
 
@@ -83,12 +84,7 @@ sudo apt install -y tlp tlp-rdw
 sudo apt install -y preload
 
 
-sudo snap install telegram-desktop
 
-
-
-
-sudo snap install emote
 
 
 
@@ -297,7 +293,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 
 
-$sudo snap install nvim --classic
+
 
 # git clone https://github.com/ryanoasis/nerd-fonts
 # cd nerd-fonts
@@ -317,9 +313,6 @@ sudo apt update
 sudo apt install papirus-icon-theme -y
 
 
-sudo snap install tela-icons
-
-sudo snap install mojave-themes
 
 flatpak install flathub com.github.marktext.marktext -y
 
