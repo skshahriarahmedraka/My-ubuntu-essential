@@ -114,7 +114,7 @@ sudo apt install -y qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils 
 brew install marked
 
 echo "########## protonVPN ##################"
-sudo apt install -y openvpn dialog python3-pip python3-setuptools  ;  sudo pip3 install protonvpn-cli #; sudo protonvpn init
+#sudo apt install -y openvpn dialog python3-pip python3-setuptools  ;  sudo pip3 install protonvpn-cli #; sudo protonvpn init
 
 
 
@@ -284,10 +284,6 @@ echo "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/DroidSans
 
 
 
-#### install flatpak
-sudo apt install flatpak
-sudo apt install gnome-software-plugin-flatpak
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo 
 
 
 
@@ -314,7 +310,7 @@ sudo apt install papirus-icon-theme -y
 
 
 
-flatpak install flathub com.github.marktext.marktext -y
+
 
 
 
