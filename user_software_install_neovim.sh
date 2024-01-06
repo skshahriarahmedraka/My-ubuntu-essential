@@ -1,7 +1,7 @@
 #! /bin/bash 
 
 sudo snap install nvim --classic
-
+sudo apt install -y xsel
 mv ~/.config/nvim ~/.config/nvim.bak
 mv ~/.local/share/nvim ~/.local/share/nvim.bak
 

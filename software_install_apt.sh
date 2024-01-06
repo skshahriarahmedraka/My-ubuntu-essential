@@ -2,49 +2,41 @@
 
 sudo apt update
 sudo apt -y upgrade
-sudo apt -y full-upgrade 
+sudo apt -y full-upgrade
 sudo apt install -y build-essential
 sudo apt install -y ntp ntpdate
 sudo ntpdate ntp.ubuntu.com
-sudo apt install -y pm-utils 
+sudo apt install -y pm-utils
 sudo apt install -y laptop-mode-tools
 sudo apt install gnome-shell-extensions
 
 
-# gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
-# gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
-# gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'cycle-windows'
-# gsettings set org.gnome.shell.extensions.dash-to-dock middle-click-action 'minimize-or-previews'
-# gsettings set org.gnome.settings-daemon.plugins.power percentage-critical 15
-# gsettings set org.gnome.settings-daemon.plugins.power percentage-low  15
-# gsettings set org.gnome.settings-daemon.plugins.power critical-battery-action  'shutdown'
-# gsettings set org.gnome.settings-daemon.plugins.power percentage-action 15
 
 echo "################ GPU driver###############"
-#echo -ne '\n' | sudo add-apt-repository ppa:graphics-drivers/ppa
-#ubuntu-drivers devices
-#sudo ubuntu-drivers autoinstall
+echo -ne '\n' | sudo add-apt-repository ppa:graphics-drivers/ppa
+ubuntu-drivers devices
+sudo ubuntu-drivers autoinstall
 
 echo "############## firewall################"
 # sudo ufw enable
 # sudo ufw allow 22/tcp
 # sudo ufw allow http
 # sudo ufw allow https
-# sudo apt install -y gufw 
-
+# sudo apt install -y gufw
 
 # keep dns 8.8.8.8 , 8.8.4.4
-#sudo apt install net-tools 
-sudo apt  install -y curl
+#sudo apt install net-tools
+sudo apt install -y curl
 sudo apt install -y gnome-shell
 sudo apt install -y ubuntu-gnome-*
 sudo apt install -y ubuntu-restricted-extras
-sudo apt install -y gnome-tweak-tool 
 sudo apt install -y gnome-shell-extensions
-sudo apt install -y gnome-tweaks ; sudo apt install -y alacarte ; sudo apt install -y dconf-editor
+sudo apt install -y gnome-tweaks
+sudo apt install -y alacarte
+sudo apt install -y dconf-editor
 
 echo "################ Bangla support ################"
-sudo apt install -y avro-bin 
+sudo apt install -y avro-bin
 sudo apt install -y ibus-avro
 bash -c "$(wget -q https://raw.githubusercontent.com/OpenBangla/OpenBangla-Keyboard/master/tools/install.sh -O -)"
 # ibus restart
@@ -52,11 +44,6 @@ sudo apt install -y python3-pip
 #sudo apt install okular -y
 echo "################ google Chrome ###############"
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install -y ./google-chrome-stable_current_amd64.deb && rm google-chrome-stable_current_amd64.deb
-
-
-
-
-
 
 # curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 #rm -rf /usr/local/go && tar -C /usr/local -xzf go1.19.linux-amd64.tar.gz
@@ -69,8 +56,7 @@ sudo apt install -y git
 sudo apt install -y calibre
 sudo apt install -y deepin-movie vlc mpv
 
-sudo apt install -y 
-sudo apt install -y  gimp gparted synaptic bleachbit
+sudo apt install -y gimp gparted synaptic bleachbit
 
 # TO CHANGE gdm3 LOGIN WALLPAPER
 
@@ -79,43 +65,31 @@ sudo apt install -y  gimp gparted synaptic bleachbit
 #sudo apt install -y lightdm
 #sudo apt install -y lightdm-settings
 # sudo apt install -y lightdm-kde-greeter
-#sudo apt-get install -y slick-greeter 
+#sudo apt-get install -y slick-greeter
 
 sudo apt install -y tlp tlp-rdw
 sudo apt install -y preload
-
-
-
-
-
 
 #sudo snap install --classic code
 
 sudo apt install -y deluge
 
+sudo apt install -y obs-studio
 
-
-sudo apt install -y  obs-studio 
-
-sudo apt install -y qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils ; sudo apt   install -y virt-manager
-
+sudo apt install -y qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
+sudo apt install -y virt-manager
 
 brew install marked
 
 echo "########## protonVPN ##################"
-sudo apt install -y openvpn dialog python3-pip python3-setuptools  ;  sudo pip3 install protonvpn-cli #; sudo protonvpn init
-
-
-
+sudo apt install -y openvpn dialog python3-pip python3-setuptools
+sudo pip3 install protonvpn-cli #; sudo protonvpn init
 
 echo "##################### microsoft fonts########################"
-sudo apt install -y ttf-mscorefonts-installer #carlito is calibri & caladea is cambria 
+sudo apt install -y ttf-mscorefonts-installer #carlito is calibri & caladea is cambria
 sudo fc-cache -f -v
 
 ######################## homebrew install ##########################
-
-
-
 
 ############   important path should be copy paste in .bashrc if needed ####################
 # export PATH=$PATH:/usr/local/go/bin
@@ -123,8 +97,6 @@ sudo fc-cache -f -v
 # export PATH="$PATH:$(go env GOPATH)/bin"
 # export PATH=$PATH:/home/ahmed/.linuxbrew/bin
 # . "$HOME/.cargo/env"
-
-
 
 ##############  extensions ################
 # sudo apt install gnome-shell-extension-
@@ -138,7 +110,7 @@ sudo fc-cache -f -v
 
 ######### themes ###############
 # Qogir cursors
-# https://www.opendesktop.org/s/Gnome/p/1366182  
+# https://www.opendesktop.org/s/Gnome/p/1366182
 # Material Cursors
 # https://www.opendesktop.org/s/Gnome/p/1346778
 
@@ -152,13 +124,12 @@ sudo fc-cache -f -v
 # McMojave cursors
 # https://www.opendesktop.org/s/Gnome/p/1355701
 
-
 # https://www.gnome-look.org/p/1241688
 # https://www.gnome-look.org/p/1346778
 # https://www.gnome-look.org/p/1166289
 # https://www.gnome-look.org/p/1099856
 # sudo add-apt-repository ppa:papirus/papirus
-# sudo apt install -y papirus-icon-theme papirus-folders 
+# sudo apt install -y papirus-icon-theme papirus-folders
 # https://www.gnome-look.org/p/1366371/
 # https://www.gnome-look.org/p/1405756
 
@@ -167,17 +138,12 @@ sudo fc-cache -f -v
 # sudo apt update
 # sudo apt install -y numix-gtk-theme numix-icon-theme-circle
 
-
-
-
-############### postman install 
+############### postman install
 wget https://dl.pstmn.io/download/latest/linux64
 sudo tar -xvf linux64 -C /usr/bin
 
-echo 'export PATH="$PATH:/usr/bin/Postman"' >> ~/.bashrc
-echo 'export PATH="$PATH:/usr/bin/Postman"' >> ~/.zshrc
-
-
+echo 'export PATH="$PATH:/usr/bin/Postman"' >>~/.bashrc
+echo 'export PATH="$PATH:/usr/bin/Postman"' >>~/.zshrc
 
 sudo touch /usr/share/applications/Postman.desktop
 
@@ -193,27 +159,13 @@ Type=Application
 Icon=/usr/bin/Postman/app/resources/app/assets/icon.png
 StartupWMClass=Postman
 StartupNotify=true
-' >> /usr/share/applications/Postman.desktop
-
+' >>/usr/share/applications/Postman.desktop
 
 cp /usr/share/applications/Postman.desktop ~/Desktop/
-
-
-
-
-
-
- 
- 
- 
- 
-
 
 sudo add-apt-repository ppa:papirus/papirus
 sudo apt update
 sudo apt install papirus-icon-theme -y
-
-
 
 echo "############ Install nerd font ###################"
 git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git
@@ -221,8 +173,3 @@ cd nerd-fonts
 ./install.sh
 fc-cache -f -v
 fc-list | grep "Nerd"
-
-
-
-
-

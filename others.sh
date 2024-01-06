@@ -175,3 +175,12 @@
 #sudo apt install -y libreoffice*
 # https://www.libreoffice.org/download/download/
 # sudo snap install wps-2019-snap
+
+# gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
+# gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
+# gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'cycle-windows'
+# gsettings set org.gnome.shell.extensions.dash-to-dock middle-click-action 'minimize-or-previews'
+# gsettings set org.gnome.settings-daemon.plugins.power percentage-critical 15
+# gsettings set org.gnome.settings-daemon.plugins.power percentage-low  15
+# gsettings set org.gnome.settings-daemon.plugins.power critical-battery-action  'shutdown'
+# gsettings set org.gnome.settings-daemon.plugins.power percentage-action 15
