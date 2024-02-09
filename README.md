@@ -18,7 +18,6 @@ sudo bash ./install_firefox-nightly.sh
 sudo bash ./install_MachineLearning_essential.sh
 sudo bash ./install_gaming_essential.sh
 ```
-
 #### install with user permission
 
 ```

@@ -12,5 +12,5 @@
 
 
 
-
-
+# video downloader in terminal
+brew install lux
