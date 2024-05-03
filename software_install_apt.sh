@@ -67,7 +67,6 @@ sudo apt install -y gimp gparted synaptic bleachbit
 # sudo apt install -y lightdm-kde-greeter
 #sudo apt-get install -y slick-greeter
 
-sudo apt install -y tlp tlp-rdw
 sudo apt install -y preload
 
 #sudo snap install --classic code
