@@ -8,6 +8,6 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 # sudo flatpak install flathub io.github.seadve.Kooha
 
-sudo flatpak install flathub com.github.marktext.marktext -y
+# sudo flatpak install flathub com.github.marktext.marktext -y
 
 

@@ -13,9 +13,9 @@ sudo apt install gnome-shell-extensions
 
 
 echo "################ GPU driver###############"
-echo -ne '\n' | sudo add-apt-repository ppa:graphics-drivers/ppa
-ubuntu-drivers devices
-sudo ubuntu-drivers autoinstall
+# echo -ne '\n' | sudo add-apt-repository ppa:graphics-drivers/ppa
+# ubuntu-drivers devices
+# sudo ubuntu-drivers autoinstall
 
 echo "############## firewall################"
 # sudo ufw enable
@@ -167,8 +167,8 @@ sudo apt update
 sudo apt install papirus-icon-theme -y
 
 echo "############ Install nerd font ###################"
-git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git
-cd nerd-fonts
-./install.sh
-fc-cache -f -v
-fc-list | grep "Nerd"
+#git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git
+#cd nerd-fonts
+#./install.sh
+#fc-cache -f -v
+#fc-list | grep "Nerd"
