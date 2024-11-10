@@ -8,7 +8,7 @@ sudo apt install -y ntp ntpdate
 sudo ntpdate ntp.ubuntu.com
 sudo apt install -y pm-utils
 sudo apt install -y laptop-mode-tools
-sudo apt install gnome-shell-extensions
+sudo apt install gnome-shell-extensions -y
 
 
 

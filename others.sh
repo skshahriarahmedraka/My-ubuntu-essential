@@ -1,4 +1,6 @@
+#! /bin/bash
 
+sudo apt update && sudo apt upgrade -y && sudo snap refresh && brew update && brew upgrade && flatpak update -y
 
 
 # echo "###### mac os theme ####" 
